@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @animal.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @animal.age %>
+</p>
+
+<p>
+  <strong>Breed:</strong>
+  <%= @animal.breed %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @animal.facebook %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @animal.twitter %>
+</p>
+
+<p>
+  <strong>Tumblr:</strong>
+  <%= @animal.tumblr %>
+</p>
+
+<p>
+  <strong>Instragram:</strong>
+  <%= @animal.instragram %>
+</p>
+
+<p>
+  <strong>Favourite parks:</strong>
+  <%= @animal.favourite_parks %>
+</p>
+
+<p>
+  <strong>Desexed:</strong>
+  <%= @animal.desexed %>
+</p>
+
+<%= link_to 'Edit', edit_animal_path(@animal) %> |
+<%= link_to 'Back', animals_path %>
