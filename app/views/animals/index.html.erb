@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Picture</th>
       <th>Name</th>
       <th>Age</th>
       <th>Breed</th>
@@ -21,6 +22,7 @@
   <tbody>
     <% @animals.each do |animal| %>
       <tr>
+        <td><%= image_tag animal.picture_url, width: '100%' if animal.picture.present? %></td>
         <td><%= animal.name %></td>
         <td><%= animal.age %></td>
         <td><%= animal.breed %></td>
